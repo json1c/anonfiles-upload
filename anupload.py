@@ -23,14 +23,14 @@ for file in args.files:
         page = requests.get(url)
         soup = BeautifulSoup(page.text, "html.parser")
         url = soup.find(id="download-url").attrs["href"]
-    
+
     print(f"{file.name}: {url}")
 
     if args.qr:
         qr = qrcode.QRCode()
         qr.add_data(url)
         f = io.StringIO()
-        qr.print_ascii(out=f)
+        qr.print_ascii(invert=True, out=f)
         f.seek(0)
         print(f.read())
 
