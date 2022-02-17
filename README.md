@@ -1,7 +1,7 @@
-## Upload any file quickly and conveniently to AnonFiles just using the command line
+Upload any file quickly and conveniently to AnonFiles just using the command line
 
 ```
-usage: anupload.py [-h] [--qr] [--direct] FILE [FILE ...]
+usage: anupload [-h] [--qr] [--direct] FILE [FILE ...]
 
 Upload file to AnonFiles
 
@@ -14,5 +14,9 @@ optional arguments:
   --direct    get direct link to download
 ```
 
+## Installing
+Termux: `sh -c $(curl https://raw.githubusercontent.com/json1c/anonfiles-upload/master/termux_install.sh)`
+Linux: `sh -c $(curl https://raw.githubusercontent.com/json1c/anonfiles-upload/master/linux_install.sh)`
+
 ### Example
-`python3 anupload.py file1.txt file2.txt`
+`anupload file1.txt file2.txt`
