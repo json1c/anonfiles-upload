@@ -16,6 +16,7 @@ optional arguments:
 
 ## Installing
 Termux: `sh -c $(curl https://raw.githubusercontent.com/json1c/anonfiles-upload/master/termux_install.sh)`
+
 Linux: `sh -c $(curl https://raw.githubusercontent.com/json1c/anonfiles-upload/master/linux_install.sh)`
 
 ### Example
