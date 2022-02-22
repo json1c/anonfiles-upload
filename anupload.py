@@ -6,7 +6,7 @@ import argparse
 from bs4 import BeautifulSoup
 
 parser = argparse.ArgumentParser(description="Upload file to AnonFiles")
-parser.add_argument("files", metavar="FILE", type=argparse.FileType("r"), nargs="+", help="file to upload")
+parser.add_argument("files", metavar="FILE", type=argparse.FileType("rb"), nargs="+", help="file to upload")
 parser.add_argument("--qr", action="store_true", help="gen QR code for every file")
 parser.add_argument("--direct", action="store_true", help="get direct link to download")
 
